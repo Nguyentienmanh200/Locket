@@ -356,3 +356,45 @@ $dailyStats = $pdo->query("
                     foreach($dailyStats as $stat) {
                         $data[] = $stat['package15s'];
                     }
+                    echo implode(',', $data);
+                ?>],
+                borderColor: '#4CAF50',
+                backgroundColor: 'rgba(76, 175, 80, 0.1)',
+                tension: 0.4,
+                fill: true
+            }, {
+                label: 'Package 3s',
+                data: [<?php 
+                    $data = [];
+                    foreach($dailyStats as $stat) {
+                        $data[] = $stat['package3s'];
+                    }
+                    echo implode(',', $data);
+                ?>],
+                borderColor: '#FF9800',
+                backgroundColor: 'rgba(255, 152, 0, 0.1)',
+                tension: 0.4,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            }
+        }
+    });
+    <?php endif; ?>
+    </script>
+</body>
+</html>
