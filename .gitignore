@@ -1,0 +1,77 @@
+# Database config
+config/database.php
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# PHP errors
+error_log
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.sql
+*.zip
+*.tar.gz
+*.rar
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules
+node_modules/
+
+# Cache
+cache/
+tmp/
+temp/
+*.cache
+
+# Session files
+sessions/
+session_*
+
+# Uploaded files
+uploads/
+images/
+files/
+media/
+
+# Test files
+test.php
+tests/
+*.test.php
+
+# Security files
+*.pem
+*.key
+*.crt
+*.pub
+*.priv
+
+# Build files
+dist/
+build/
+*.min.js
+*.min.css
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# System files
+.DS_Store
+*.swp
+*.swo
+*~
